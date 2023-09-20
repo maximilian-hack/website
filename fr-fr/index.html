@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximilian Hack</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #0093E9;
+          background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      }
+      header {
+          /*background-color: #0093E9;*/
+          /*background-image: linear-gradient(10deg, #0093E9 0%, #80D0C7 100%);*/
+          background-color: #0093e9;
+          color: #fff;
+          text-align: center;
+          padding: .75rem;
+      }
+      .sticky-header {
+          position: sticky;
+          top: 0;
+          background-color: linear-gradient(10deg, #0093E9 0%, #80D0C7 25%);
+          z-index: 100;
+          cursor: pointer;
+          padding: .75rem;
+      }
+        .tagline {
+            display: none;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 1.1rem;
+        }
+
+        .flag-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 20px;
+            background-image: url('./assets/IMG_2338.png'); 
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .flag-tooltip {
+            display: none;
+            position: absolute;
+            top: -30px;
+            right: 50px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .flag-icon:hover + .flag-tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header" onclick="scrollToTop()">
+        <h1>Maximilian Hack</h1>
+    </header>
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <p>
+            Je suis un étudiant engagé avec une forte passion pour les sciences, l'informatique et en particulier le développement de logiciels. Je suis motivé pour mettre mes compétences et mes connaissances au service du monde de la technologie, qui est en constante évolution.
+        </p>
+
+        <h2>Ausbildung</h2>
+        <p>
+            <strong>Lycée Immanuel Kant, Münster, Rhénanie-du-Nord-Westphalie, Allemagne</strong><br>
+            Depuis 2017 - Probablement baccalauréat en 2025<br>
+            Matières du baccalauréat :<br>
+            Mathématiques, sciences sociales<br>
+            Informatique, anglais<br>
+            <a href="https://kant-hiltrup.de" target="_blank">Immanuel-Kant-Gymnasium</a>
+        </p>
+
+        <h2>Compétences</h2>
+        <p>
+            En tant que futur développeur de logiciels, je dispose d'un ensemble de compétences polyvalentes couvrant plusieurs langages de programmation et technologies. Mes connaissances comprennent JavaScript, HTML, Python, Java, avec lequel nous travaillons à l'école. Bien que je ne sois pas encore un professionnel de l'un de ces langages, je suis très intéressé par l'expérimentation de nouveaux langages de programmation et de nouvelles applications.
+        </p>
+
+        <h2>Langues</h2>
+        <p>
+            Outre ma passion pour la programmation, je parle plusieurs langues. Je parle l'allemand comme langue maternelle, l'anglais couramment au niveau C1 et j'ai de bonnes connaissances en français au niveau B2. En outre, j'ai des connaissances de base en italien au niveau A2. Ces compétences linguistiques améliorent non seulement ma capacité à collaborer dans un environnement de travail mondialisé, mais reflètent également mon engagement en faveur d'une communication efficace et d'un travail d'équipe interculturel.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            Courrier électronique : kontakt@max-hack.de<br>
+            N'hésitez pas à me contacter ! Je suis toujours ouverte à de nouveaux projets et à de nouvelles collaborations.<br>
+        </p>
+        
+    </div>
+    <a href="https://max-hack.de/en-uk/index.html" class="flag-icon" target="_self"></a>
+    <div class="flag-tooltip">to english site/à la page anglaise</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.sticky-header');
+            const tagline = document.querySelector('.tagline');
+
+            if (window.scrollY > 50) {
+                tagline.style.display = 'block';
+            } else {
+                tagline.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
