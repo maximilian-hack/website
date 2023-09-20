@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maximilian Hack</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <header class="sticky-header" onclick="scrollToTop()">
@@ -58,30 +59,13 @@
         collaborations.<br />
       </p>
     </div>
-    <a
-      href="../index.html"
-      class="flag-icon"
-      target="_self"
-    ></a>
-    <div class="flag-tooltip">zur Deutschen Seite</div>
-    <script>
-      function scrollToTop() {
-          window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-          });
-      }
-
-      window.addEventListener('scroll', () => {
-          const header = document.querySelector('.sticky-header');
-          const tagline = document.querySelector('.tagline');
-
-          if (window.scrollY > 50) {
-              tagline.style.display = 'block';
-          } else {
-              tagline.style.display = 'none';
-          }
-      });
-    </script>
+    <div class="navbar" id="myNavbar">
+      <ul>
+        <li class="nav-item"><a href="../fr-fr/index.html" class="french-flag" target="_self">vers le site francais</a></li>
+        <li class="nav-item"><a href="../it-it/index.html" class="italian-flag" target="_self">al sito italiano</a></li>
+        <li class="nav-item"><a href="../index.html" class="german-flag">Zur Deutschen Seite</a></li>
+        <li class="nav-item"><a href="../en-uk/index.html" class="english-flag" target="_self"></a>current website</li>
+      </ul>
+    </div>
   </body>
 </html>
