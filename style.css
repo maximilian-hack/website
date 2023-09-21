@@ -1,13 +1,20 @@
+:root {
+  --bg-primary: #7785AC;
+  --bg-secondary: #9AC6C5;
+  --text-primary: #fff;
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #7785AC;
+    background-image: linear-gradient(160deg, #7785AC 0%, #9AC6C5 100%);
 }
 
 header {
-    background-color: #0093e9;
+    background-color: #7785AC;
     color: #fff;
     text-align: center;
     padding: .75rem;
@@ -16,7 +23,7 @@ header {
 .sticky-header {
     position: sticky;
     top: 0;
-    background-color: linear-gradient(10deg, #0093E9 0%, #80D0C7 25%);
+    background-color: linear-gradient(10deg, #7785AC 0%, #9AC6C5 25%);
     z-index: 100;
     cursor: pointer;
     padding: .75rem;
