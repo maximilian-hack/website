@@ -154,3 +154,35 @@ body {
     background-clip: text;
     border-color: white;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    z-index: 1;
+    background-color: var(--bg-primary);
+    background-image: url("../assets/menu-left.svg");
+}
+
+nav:hover {
+    height: auto;
+    width: auto;
+    transition: .5s;
+}
+
+nav ul {
+    opacity: 0;
+    display: flex;
+    align-items: left;
+}
+
+nav:hover ul {
+    opacity: 1;
+}
+
+nav ul a {
+    position: absolute;
+    left: 0;
+}
