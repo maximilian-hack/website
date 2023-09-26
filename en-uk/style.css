@@ -1,64 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 header {
-    background-color: #0093e9;
-    color: #fff;
-    text-align: center;
-    padding: .75rem;
+  background-color: #0093e9;
+  color: #fff;
+  text-align: center;
+  padding: .75rem;
 }
 
 .sticky-header {
-    position: sticky;
-    top: 0;
-    background-color: linear-gradient(10deg, #0093E9 0%, #80D0C7 25%);
-    z-index: 100;
-    cursor: pointer;
-    padding: .75rem;
+  position: sticky;
+  top: 0;
+  background-color: linear-gradient(10deg, #0093E9 0%, #80D0C7 25%);
+  z-index: 100;
+  cursor: pointer;
+  padding: .75rem;
 }
 
-  h1 {
-      font-size: 2rem;
-  }
+h1 {
+  font-size: 2rem;
+}
 
-  .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  p {
-      font-size: 1.1rem;
-  }
+p {
+  font-size: 1.1rem;
+}
 
-  
-  .navbar {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 2rem;
-    width: 4rem;
-    overflow: hidden;
-    transition: 0.5s;
-    border-radius: .25rem;
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2rem;
+  width: 4rem;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: .25rem;
 }
 
 .navbar:hover {
-    width: 4rem;
-    height: 10rem;
+  width: 4rem;
+  height: 10rem;
 }
 
 .navbar:hover .nav-item {
@@ -67,18 +67,18 @@ header {
 }
 
 .nav-item {
-    list-style: none;
-    padding: 0px;
-    opacity: 1;
-    transition: 0.3s;
-    font-size: 0%;
+  list-style: none;
+  padding: 0px;
+  opacity: 1;
+  transition: 0.3s;
+  font-size: 0%;
 }
 
 .nav-item a {
-    right: 0;
-    width: 4rem;
-    height: 2rem;
-    border-radius: 2.5px;
+  right: 0;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 2.5px;
 }
 
 .default-flag {

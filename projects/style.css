@@ -33,14 +33,15 @@ body {
     width: 10px;
     height: 10px;
 }
+
 .card-list::-webkit-scrollbar-thumb {
     background: var(--card-primary);
     border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
 }
 
 .card-list::-webkit-scrollbar-track {
-    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
 
 
@@ -118,7 +119,7 @@ body {
 }
 
 .card-header h2:hover {
-    background: linear-gradient(90deg,var(--card-text),var(--card-text-secondary));
+    background: linear-gradient(90deg, var(--card-text), var(--card-text-secondary));
     text-shadow: none;
     background-clip: text;
     -webkit-background-clip: text;
@@ -146,7 +147,7 @@ body {
 }
 
 .tags a:hover {
-    background: linear-gradient(90deg,var(--card-text),var(--card-text-secondary));
+    background: linear-gradient(90deg, var(--card-text), var(--card-text-secondary));
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -218,4 +219,3 @@ nav:active li a {
 
     transition: .5s;
 }
-
