@@ -1,0 +1,40 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Default Background -->
+    <rect width="100%" height="100%" fill="#cccccc" rx="20" />
+
+    <!-- Text for displaying temperature -->
+    <text x="10%" y="90%" font-size="100%" fill="white" id="temperature">
+        N/A°C
+    </text>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const apiUrl = 'https://api.opensensemap.org/boxes/61dd99d833e048001b59d792';
+
+            // Function to fetch weather data and update SVG
+            async function fetchWeather() {
+                try {
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+
+                    // Extract temperature data
+                    const temperatureData = data.sensors[0].lastMeasurement.value;
+
+                    // Get temperature text and SVG dimensions
+                    const temperatureText = document.getElementById('temperature');
+                    const svgWidth = 200; // Set to your desired SVG width
+
+                    // Calculate the font size based on available space
+                    const fontSize = Math.min(svgWidth / temperatureText.getComputedTextLength() * 24, 24);
+
+                    // Update temperature text with the calculated font size
+                    temperatureText.setAttribute('font-size', fontSize);
+                    temperatureText.textContent = temperatureData + '°C';
+                } catch (error) {
+                    console.error('Error fetching weather data:', error);
+                }
+            }
+
+            fetchWeather();
+        });
+    </script>
+</svg>
