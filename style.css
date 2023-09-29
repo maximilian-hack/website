@@ -2,7 +2,6 @@
   --bg-primary: #7785AC;
   --bg-secondary: #9AC6C5;
   --text-primary: #fff;
-
 }
 
 body {
@@ -45,7 +44,6 @@ h1 {
 p {
   font-size: 1.1rem;
 }
-
 
 .navbar {
   position: fixed;
