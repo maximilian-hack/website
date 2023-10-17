@@ -1,0 +1,11 @@
+<svg width="0" height="0" id="svg" viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg">
+    <script>
+        console.log("Hello World!");
+        console.log("I'm a computing SVG")
+        console.log("1+2="+(1+2));
+        console.log(fetch('https://max-hack.de'));
+        console.warn('I could be dangerous ;\)')
+
+        throw new Error('I can throw things :\)')
+    </script>
+</svg>
