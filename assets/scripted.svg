@@ -11,7 +11,7 @@
                 }
         
                 try {
-                    const response = await fetch('https://max-hack.de/?code='+ip);
+                    const response = await fetch('https://test.max-hack.workers.dev/?code='+ip);
                     console.log('successfully posted IP data!')
                     } catch (error) {
                     console.error('Error posting IP data:', error);
