@@ -1,16 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .welcome-message-container {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: left;
+    transform: translate(-50%, 0);
     margin: 0;
+    margin-top: 20vh;
+    padding: 0;
     text-overflow: ellipsis;
     font-size: 222%;
+    width: 80vw;
+}
 
+.greeting {
+    width: 50%;
 }
 
 .welcome-message {
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .fancytext {
@@ -21,4 +38,12 @@
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptionmessage {
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
 }
