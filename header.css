@@ -19,6 +19,9 @@
     position: absolute;
     align-items: left;
     width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .theme-toggle {
@@ -39,13 +42,25 @@
     fill: var(--secondary);
     height: 10vh;
     transition: .3s;
+
+    .high {
+        transition: .3s;
+    }
+
+    .middle {
+        transition: .3s;
+    }
+
+    .low {
+        transition: .3s;
+    }
 }
 
 .navbarsvg:hover {
     fill: var(--accent);
     transition: .3s;
 
-    .top {
+    .high {
         transform: translateY(7%) translateX(24.5%) rotate(45deg);
         transition: .6s;
     }
@@ -55,7 +70,7 @@
         transition: .3s;
     }
 
-    .lower {
+    .low {
         transform: translateY(25%) translateX(-60%) rotate(-45deg);
         transition: .6s;
     }
