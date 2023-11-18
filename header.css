@@ -38,7 +38,7 @@
 .navbarsvg {
     fill: var(--secondary);
     height: 10vh;
-    transition: 3s;
+    transition: .3s;
 }
 
 .navbarsvg:hover {

@@ -1,12 +1,3 @@
-.header {
-    background-color: rgba(0, 0, 0, 0);
-    position: sticky;
-    top: 0;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-}
-
 .fa-house-chimney {
     position: absolute;
     left: 5px;
@@ -26,6 +17,8 @@
     right: 5px;
     top: 5px;
     position: absolute;
+    align-items: left;
+    width: fit-content;
 }
 
 .theme-toggle {
@@ -40,4 +33,30 @@
 .theme-toggle:focus {
     fill: var(--accent);
     transition: .3s;
+}
+
+.navbarsvg {
+    fill: var(--secondary);
+    height: 10vh;
+    transition: .3s;
+}
+
+.navbarsvg:hover {
+    fill: var(--accent);
+    transition: .3s;
+
+    .top {
+        transform: translateY(7%) translateX(24.5%) rotate(45deg);
+        transition: .6s;
+    }
+
+    .middle {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .lower {
+        transform: translateY(25%) translateX(-60%) rotate(-45deg);
+        transition: .6s;
+    }
 }
