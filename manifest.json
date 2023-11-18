@@ -1,0 +1,8 @@
+{
+    "name": "Max's Website",
+    "short_name": "Max's Website",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#050b10",
+    "description": "Max's Website as an App"
+}
