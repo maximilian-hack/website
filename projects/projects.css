@@ -11,11 +11,11 @@ div.card-author div a:visited {
 }
 
 h2 a {
-    color: var(--primary);
+    color: var(--text);
 }
 
 h2 a:visited {
-    color: var(--primary);
+    color: var(--text);
 }
 
 .card-list {
@@ -25,6 +25,7 @@ h2 a:visited {
     padding: 3rem;
     overflow-x: scroll;
     align-items: center;
+    width: 100vw;
 }
 
 .card-list::-webkit-scrollbar {
