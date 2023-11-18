@@ -8,6 +8,7 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     text-align: center;
+    margin: 0;
 }
 
 .descriptionmessage {
@@ -17,6 +18,7 @@
 }
 
 .homelink {
+    margin: 0;
     font-size: 175%;
     text-decoration: none;
     color: var(--primary);
