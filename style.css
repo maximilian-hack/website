@@ -26,6 +26,10 @@
     --darkstuff: none;
 
     transition: .5s;
+
+    #meta-theme-color {
+        content: var(--background);
+    }
 }
 
 .dark {
@@ -39,6 +43,10 @@
     --darkstuff: flex;
 
     transition: .5s;
+
+    #meta-theme-color {
+        content: var(--background);
+    }
 }
 
 .lightstuff {
