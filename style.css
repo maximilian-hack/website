@@ -11,6 +11,8 @@
     --dsecondary: #0e1e2f;
     --daccent: #4185c8;
 
+    --transition-speed: .3s;
+
     margin: 0;
     padding: 0;
 }
