@@ -4,12 +4,12 @@
     top: 5px;
     height: 10vh;
     width: auto;
-    fill: var(--secondary);
+    fill: var(--primary);
     transition: .3s;
 }
 
 .fa-house-chimney:hover {
-    fill: var(--accent);
+    fill: var(--primary);
     transition: .3s;
 }
 
@@ -19,10 +19,13 @@
     position: absolute;
     align-items: left;
     width: fit-content;
+    display: grid;     
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .theme-toggle {
-    fill: var(--secondary);
+    fill: var(--primary);
     background-color: rgba(0, 0, 0, 0);
     border: none;
     height: 10vh;
