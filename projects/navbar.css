@@ -4,7 +4,6 @@
     width: 5rem;
     height: 100vh;
     transition: width 600ms ease;
-    z-index: 20;
 }
 
 .navbar-nav {
@@ -25,12 +24,15 @@
     margin-top: auto;
 }
 
-.navbar:hover {
+.navbar:hover,
+.navbar:focus {
     width: 16rem;
+
     .nav-link svg {
         margin-left: auto;
         transition: var(--transition-speed);
     }
+
     transition: var(--transition-speed);
 }
 
@@ -43,7 +45,8 @@
     transition: var(--transition-speed);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     background: var(--secondary);
     color: var(--accent);
 }
@@ -127,7 +130,8 @@
     }
 }
 
-.navbar:hover .navbarsvg {
+.navbar:hover .navbarsvg,
+.navbar:focus .navbarsvg {
     fill: var(--accent);
     transition: .3s;
 
