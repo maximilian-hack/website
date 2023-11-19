@@ -1,0 +1,77 @@
+.fa-house-chimney {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: 10vh;
+    width: auto;
+    fill: var(--primary);
+    transition: .3s;
+}
+
+.fa-house-chimney:hover {
+    fill: var(--accent);
+    transition: .3s;
+}
+
+.right-side-stuff {
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    align-items: left;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.theme-toggle {
+    fill: var(--primary);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 10vh;
+    transition: .3s;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    fill: var(--accent);
+    transition: .3s;
+}
+
+.navbarsvg {
+    fill: var(--primary);
+    height: 10vh;
+    transition: .3s;
+
+    .high {
+        transition: .3s;
+    }
+
+    .middle {
+        transition: .3s;
+    }
+
+    .low {
+        transition: .3s;
+    }
+}
+
+.navbarsvg:hover {
+    fill: var(--accent);
+    transition: .3s;
+
+    .high {
+        transform: translateY(7%) translateX(24.5%) rotate(45deg);
+        transition: .6s;
+    }
+
+    .middle {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .low {
+        transform: translateY(25%) translateX(-60%) rotate(-45deg);
+        transition: .6s;
+    }
+}

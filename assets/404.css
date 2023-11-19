@@ -1,0 +1,35 @@
+.statuscodemessage {
+    font-size: 1000%;
+    background-color: var(--primary);
+    background-image: linear-gradient(90deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+}
+
+.descriptionmessage {
+    margin: 5%;
+    font-size: 250%;
+    text-align: center;
+}
+
+.homelink {
+    margin: 0;
+    font-size: 175%;
+    text-decoration: none;
+    color: var(--primary);
+    text-align: center;
+}
+
+.homelink:visited {
+    color: var(--primary);
+}
+
+.homelink:hover,
+.homelink:focus {
+    color: var(--accent);
+}
