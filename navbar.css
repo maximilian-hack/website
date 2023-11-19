@@ -29,7 +29,9 @@
     width: 16rem;
     .nav-link svg {
         margin-left: auto;
+        transition: var(--transition-speed);
     }
+    transition: var(--transition-speed);
 }
 
 .nav-link {
