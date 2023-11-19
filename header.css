@@ -4,7 +4,7 @@
     top: 5px;
     height: 10vh;
     width: auto;
-    fill: var(--secondary);
+    fill: var(--primary);
     transition: .3s;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .theme-toggle {
-    fill: var(--secondary);
+    fill: var(--primary);
     background-color: rgba(0, 0, 0, 0);
     border: none;
     height: 10vh;
@@ -39,7 +39,7 @@
 }
 
 .navbarsvg {
-    fill: var(--secondary);
+    fill: var(--primary);
     height: 10vh;
     transition: .3s;
 
