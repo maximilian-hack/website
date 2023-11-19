@@ -1,9 +1,10 @@
 .navbar {
     position: fixed;
-    background-color: var(--background);
+    background-color: var(--secondary);
     width: 5rem;
     height: 100vh;
     transition: width 600ms ease;
+    z-index: 20;
 }
 
 .navbar-nav {
@@ -26,6 +27,9 @@
 
 .navbar:hover {
     width: 16rem;
+    .nav-link svg {
+        margin-left: auto;
+    }
 }
 
 .nav-link {
@@ -34,12 +38,10 @@
     height: 5rem;
     color: var(--text);
     text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
     transition: var(--transition-speed);
 }
 
 .nav-link:hover {
-    filter: grayscale(0%) opacity(1);
     background: var(--secondary);
     color: var(--accent);
 }
@@ -50,9 +52,11 @@
 }
 
 .nav-link svg {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
+    text-align: right;
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
     fill: var(--primary);
 }
 
@@ -65,7 +69,7 @@
     }
 
     .logo {
-        display: none;
+        display: none !important;
     }
 
     .navbar-nav {
@@ -100,5 +104,43 @@
 
     .navbar:hover .logo-text {
         left: 0px;
+    }
+}
+
+.navbarsvg {
+    fill: var(--primary);
+    height: 10vh;
+    transition: .3s;
+
+    .high {
+        transition: .3s;
+    }
+
+    .middle {
+        transition: .3s;
+    }
+
+    .low {
+        transition: .3s;
+    }
+}
+
+.navbar:hover .navbarsvg {
+    fill: var(--accent);
+    transition: .3s;
+
+    .high {
+        transform: translateY(7%) translateX(24.5%) rotate(45deg);
+        transition: .6s;
+    }
+
+    .middle {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .low {
+        transform: translateY(25%) translateX(-60%) rotate(-45deg);
+        transition: .6s;
     }
 }
