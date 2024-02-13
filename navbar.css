@@ -113,7 +113,7 @@
     }
 
     .navbar:hover .logo-text {
-        left: 0px;
+        left: 0;
     }
 }
 
