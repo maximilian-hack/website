@@ -1,3 +1,7 @@
+:root {
+    --transition-speed: 0.3;
+}
+
 .navbar {
     position: fixed;
     background-color: var(--secondary);
